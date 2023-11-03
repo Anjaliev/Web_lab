@@ -1,0 +1,33 @@
+<!-- Program 7:Write a web page that uses a prompt to ask the user what color they’d like the
+background of their paragraphs to be. It should then write a paragraph with the
+background set to the appropriate color.
+Anjali E V(3/11/23)-->
+<html>
+<head>
+    <title>Program 7</title>
+	<script>
+        function changeBackgroundColor() {
+            const colorInput = prompt("Enter a color name or a hexadecimal color code (e.g., 'red' or '#FF5733'):");
+            const paragraph = document.getElementById('paragraph');
+
+            if (colorInput) {
+                paragraph.style.backgroundColor = colorInput;
+            }
+        }
+    </script>
+    
+</head>
+<body>
+<center>
+    <h1 style="color:green;"><u>Java Script</u></h1>
+
+    <button onclick="changeBackgroundColor()">Set Background Color</button>
+	</center>
+
+    <p id="paragraph">JavaScript often abbreviated as JS, is a programming language that is one of the core technologies of the World Wide Web, 
+	alongside HTML and CSS. As of 2023, 98.7% of websites use JavaScript on the client side for webpage behavior, often incorporating third-party libraries. 
+	All major web browsers have a dedicated JavaScript engine to execute the code on users' devices.</p>
+
+
+</body>
+</html>
